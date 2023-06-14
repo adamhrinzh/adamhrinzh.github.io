@@ -1,0 +1,261 @@
+
+h1 {
+  color: #010b13;   
+  font-family: "Crimson Text", serif;
+  font-style: italic;}
+
+h2 {color: #010b13;  font-family: Georgia;}
+
+h3 {color: #010b13;  font-family: Georgia;}
+
+h4 {color: #010b13;  font-family: Georgia;}
+
+p  { font-family: Georgia;}
+
+/*-------------Vertifikácia veku------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+button#ano-tlacidlo {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #888;
+}
+
+button#nie-tlacidlo {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #888;
+}
+
+button#ano-tlacidlo:hover {
+  background-color: #45a049;
+}
+
+
+button#nie-tlacidlo:hover {
+  background-color: #45a049;
+}
+
+/*----------------------------------------*/
+/* grid systém ver. 4 */
+
+    .header {
+      background-image: url(liquor-header.jpg);
+      display: flex;
+      color: white;
+      align-items: center;
+      border: 3px solid black;
+    }
+
+  /*----------------------------------------*/  
+    .menu {
+      width: 20%;
+      float: left;
+      height: 100vh;
+      background-color: #ffff9f;
+      }
+
+      .menu a {
+     text-decoration: none; 
+      color: black; 
+     transition: transform 0.2s;
+      }
+
+.menu a:hover {
+  font-size: 1.1em;
+  color: limegreen; 
+}
+
+.loga {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    
+     .menu h2 {
+      color: black;
+      font-family: Georgia;
+      background-color: #919191;
+      text-align: center;
+      -webkit-text-stroke: 1px black; -webkit-text-fill-color: white;
+      font-weight: strong;
+      font-style: italic;
+
+    }
+    .menu p {
+      font-family: Georgia;
+      font-size: 20px;
+      font-style: italic;
+      padding-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }  
+
+  /*----------------------------------------*/  
+
+
+
+/* štýl pre pozadie stránky */
+body {
+  background-image: url("bar.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100% auto;
+  background-origin: content-box;
+  background-clip: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.grid-item {
+  background-color: white;
+  border: 2px solid black;
+  padding:2px;
+  margin:10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+    /*----------------------------------------*/
+
+    /*--------------------LOGO  --------------*/
+
+
+  .logo {
+  width: 50px; /* Upravte veľkosť loga podľa potreby */
+  height: 50px;
+  border-radius: 50%; /* Toto oreže logo do kruhu */
+  margin: 15px; /* Upravte odsadenie loga podľa potreby */
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+    /*----------------------------------------*/
+
+
+
+
+
+    /* Okno s kontaktnými údajmi */
+#kontakt-okno {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Okno s možnosťami platby */
+#platby-okno {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Okno s možnosťami dopravy */
+#doprava-okno {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+ #zatvorit-tlacidlo {
+      float: right;
+      margin-top: -20px;
+    }
+
+
+/* POPUPY */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  z-index: 9999;
+}
+
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  border-radius: 5px;
+  overflow: auto; /* Pridané scrollovanie pre prípad veľkého obsahu */
+}
+
+/* Prispôsobenie veľkosti popup pre rôzne zariadenia */
+@media (min-width: 576px) {
+  .popup-content {
+    max-width: 400px;
+  }
+}
+
+.popup-content button:hover {
+  background-color: #555;
+}

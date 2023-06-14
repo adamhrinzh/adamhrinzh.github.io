@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="author" content="Adam Hriň">
+  <meta name="description" content="Zoznam receptov jednoducho namiešateľných alkoholických drinkov ">
+  <meta name="keywords" content="Alcoholic, alkohol, alkoholických, Pina, Colada, recept, Postup, mojito,">
+
+  <title>Záverečná stránka</title>
+
+
+<!-- štýl päťičky -->
+  <style>
+  .footer {
+    position:;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+  body {
+    overflow: hidden;
+  }
+
+  
+</style>
+
+
+
+</head>
+
+
+<body>
+
+ <!-- potvrdenie 18 rokov -->
+
+  <div id="overenie-modal" class="modal">
+    <div class="modal-content">
+      <h3>Upozornenie</h3>
+      <p>Táto stránka obsahuje informácie o alkoholických nápojoch. Potvrďte, prosím, že máte viac ako 18 rokov.</p>
+      <button id="ano-tlacidlo">Mám viac ako 18 rokov</button>
+      <button id="nie-tlacidlo">Mám menej ako 18 rokov</button>
+    </div>
+  </div>
+
+<!-- grid -->
+
+<div class="header">
+   <img src="logo.jpg" class="logo">
+   <h1 class="centered" style="color: white; font-size: 4em; -webkit-text-stroke: 1px black; -webkit-text-fill-color: white;  font-weight: bold;">Alcoholic cocktails</h1>
+  </div>
+
+<!-- menu -->
+
+<div class="menu">
+   <h2> MENU </h2>
+  
+<!-- okienka pre menu -->
+
+  <p><a href="https://www.svetnapojov.sk">Nákup ingrediencí</a></p>
+  <p><a href="#moznosti_dopravy">Možnosti dopravy</a></p>
+  <p><a href="#moznosti_platby">Možnosti platby</a></p>
+  <p><a href="#kontakt">Kontakt</a></p>
+  <br>
+  <div class="loga">
+    <a href="https://www.facebook.com"><img src="fb.gif" alt="FB logo" style="width: 35px; height: 35px;  margin: -1px 5px 2px;"></a>
+    <a href="https://www.instagram.com"><img src="ig.png" alt="IG logo" style="width: 30px; height: 30px; margin: 5px;"></a>
+  </div>
+</div>
+
+<!-- obrazky    <div class="container">   -->
+
+
+<div class="row justify-content-center">
+  
+  <div class="row">
+
+    <div class="col-3">
+      <div class="grid-item" style="background-color: #ffff9f;">
+        <img src="Mojito.png" alt="Mojito" onclick="showPopup('popup-mojito')">
+        <p style="text-align: center;">Mojito</p>
+      </div>
+    </div>
+
+     <div class="col-3">
+      <div class="grid-item" style="background-color: #ffff9f;">
+        <img src="Margarita.png" alt="Margarita" onclick="showPopup('popup-margarita')">
+        <p style="text-align: center;">Margarita</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="grid-item" style="background-color: #ffff9f;">
+        <img src="White.png" alt="White_Russian" onclick="showPopup('popup-white')">
+        <p style="text-align: center;">White Russian</p>
+      </div>
+    </div>
+
+  </div>
+<div class="row">
+
+    <div class="col-3">
+      <div class="grid-item" style="background-color: #ffff9f;">
+        <img src="pina.png" alt="Pina_Colada" onclick="showPopup('popup-pina')">
+        <p style="text-align: center;">Pina Colada</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="grid-item" style="background-color: #ffff9f;">
+        <img src="sour.png" alt="Whiskey_Sour" onclick="showPopup('popup-sour')">
+        <p style="text-align: center;">Whiskey Sour</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="grid-item" style="background-color: #ffff9f;">
+        <img src="manhattan.png" alt="Manhattan" onclick="showPopup('popup-new')">
+        <p style="text-align: center;">Manhattan</p>
+      </div>
+    </div>
+
+  
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- pätička -->
+<footer class="footer" style="position: fixed; bottom: 0;">
+  <div class="row">
+    <p>© Pite s nami s.r.o. Autorské práva sú vyhradené a vykonáva ich prevádzkovateľ portálu. Spravodajská licencia vyhradená.</p>
+  </div>
+</footer>
+
+
+</div>
+
+
+<!-- okienko s kontaktnymi udajmi -->
+<div id="kontakt-okno" class="modal">
+  <div class="modal-content">
+    <h3>Kontakt</h3>
+    <p>Telefón: 0948 999 999</p>
+    <p>Email: pisnami@gmail.com</p>
+    <br>
+      
+    <a href="https://www.facebook.com"><img src="fb.gif" alt="FB logo" style="width: 35px; height: 35px;  margin: 5px;"></a>
+    <a href="https://www.instagram.com"><img src="ig.png" alt="IG logo" style="width: 30px; height: 30px; margin: 5px;"></a>
+    <br>  
+
+    <button class="kontakt-zatvorit-tlacidlo">Zatvoriť</button>
+  </div>
+</div>
+
+
+<!-- Okienko s možnosťami platby -->
+<div id="platby-okno" class="modal">
+  <div class="modal-content">
+    <h3>Možnosti platby</h3>
+    <p>1. NA DOBIERKU</p>
+    <p>2. V HOTOVOSTI</p>
+    <p>3. PREVODOM NA ÚČET</p>
+    <p>4. PLATBA KARTOU <br>Poštovné sú 4 €, no pri objednávke nad 40,– € je poštovné zdarma.</p>
+    <br>   
+    <button class="zatvorit-tlacidlo">Zatvoriť</button>
+  </div>
+</div>
+
+
+<!-- okienko s možnosťami dopravy -->
+<div id="doprava-okno" class="modal">
+  <div class="modal-content">
+    <ul style="list-style-type: square; margin-left: 40px;">
+      <li><span style="font-size: 14px;">Doručenie priamo do Vašich rúk</span></li>
+      <li><span style="font-size: 14px;">Doručenie do 24 hodín počas pracovných dní (objednávky do 13:00 a položky 'skladom'), pokiaľ sa nevyskytnú neočakávané udalosti na strane prepravcu</span></li>
+      <li><span style="font-size: 14px;">SMS správa deň pred doručením balíka</span></li>
+      <li><span style="font-size: 14px;">SMS správa v deň doručenia balíka s časovým rozpätím príchodu kuriéra</span></li>
+      <li><span style="font-size: 14px;">V prípade neúspešného prvého pokusu o doručenie, kuriér sa pokúsi balík doručiť ešte dva krát, prípadne po telefonickej dohode.</span></li>
+    </ul>
+    <br>
+    <button class="zatvorit-tlacidlo">Zatvoriť</button>
+  </div>
+</div>
+
+<!--              POPUPY             -->
+
+<div id="popup-mojito" class="popup">
+  <div class="popup-content">
+    <h2 id="popup-title"></h2>
+    <h3>Ingrediencie:</h3>
+    <ul>
+      <li>10 mätových lístkov</li>
+      <li>polovica limetky narezaná na štvrtiny</li>
+      <li>cukor podľa chuti, ale najlepšie tak 1 veľkú lyžicu</li>
+      <li>1 pohár ľadových kociek</li>
+      <li>3cl (30ml) rumu</li>
+      <li>pol pohára sódy</li>
+     </ul>
+    <h3>Postup prípravy:</h3>
+      <ul>
+        <li><strong>1. krok:</strong> Do pohára vložte kúsky limetky a poriadne ich popučte, aby z nich vyšlo čo najviac šťavy</li>
+        <li><strong>2. krok:</strong> Pridajte cukor a mätu, poriadne premiešajte</li>
+        <li><strong>3. krok:</strong> Pohár naplňte takmer doplna ľadom, najlepšie je použiť ľadovú drť</li>
+        <li><strong>4. krok:</strong> Prilejte rum a potom doplna zalejte sódou</li>
+        <li><strong>5. krok:</strong> Podľa chuti ešte pridajte cukor a ako ozdobu môžete použiť mätové lístky, prípadne plátok limetky</li>
+      </ul>
+    <button onclick="hidePopup('popup-mojito')">Zatvoriť</button>
+  </div>
+</div>
+
+<div id="popup-margarita" class="popup">
+    <div class="popup-content">
+      <h2 id="popup-title"></h2>
+      <h3>Ingrediencie:</h3>
+      <ul>
+  <li>5cl (50ml) Tequila</li>
+  <li>2cl (20ml) Triple sec</li>
+  <li>2cl (20ml) limetkovej šťavy</li>
+  <li>soľ</li>
+  <li>¾ pohára ľadu</li>
+  </ul>
+      <h3>Postup prípravy:</h3>
+        <ul>
+  <li><strong>1. krok</strong>: ¾ pohára ľadu vložte do shakera a prilejte alkohol s limetkovou šťavou</li>
+  <li><strong>2. krok</strong>: Aspoň 30 sekúnd miešajte, aby sa drink poriadne ochladil</li>
+  <li><strong>3. krok</strong>: Prejdite plátkom limetky po vonkajšej strane hrany pohára a následne pohár 3x namočte do soli</li>
+  <li><strong>4. krok</strong>: Cez sitko nalievajte zo shakera do pohára, v ktorom už ľad byť nemusí</li>
+  </ul>
+      <button onclick="hidePopup('popup-margarita')">Zatvoriť</button>
+    </div>
+</div>
+
+<div id="popup-white" class="popup">
+        <div class="popup-content">
+          <h2 id="popup-title"></h2>
+          <h3>Ingrediencie:</h3>
+          <ul>
+      <li>5cl (50ml) vodky</li>
+      <li>2cl (20ml) kávového likéru</li>
+      <li>3cl (30ml) smotany</li>
+      <li>ľad</li>
+      </ul>
+          <h3>Postup prípravy:</h3>
+            <ul>
+      <li><strong>1. krok</strong>: Do pohára vložte kocky ľadu.</li>
+      <li><strong>2. krok</strong>: Ako prvé nalejte kávový likér a vodku, potom smotanu.</li>
+      <li><strong>3. krok</strong>: Jemne premiešajte.</li>
+      </ul>
+          <button onclick="hidePopup('popup-white')">Zatvoriť</button>
+        </div>
+</div>
+
+<div id="popup-pina" class="popup">
+  <div class="popup-content">
+    <h2 id="popup-title"></h2>
+    <h3>Ingrediencie:</h3>
+          <ul>
+      <li>9cl (90ml) ananásového džúsu</li>
+      <li>6cl (60ml) bieleho rumu</li>
+      <li>3cl (30ml) kokosového mlieka</li>
+      <li>2 kocky ľadu</li>
+      <li>plátok ovocia na ozdobenie</li>
+      </ul>
+    <h3>Postup prípravy:</h3>
+            <ul>
+      <li><strong>1. krok:</strong> 9cl ananásového džúsu, 3cl kokosového mlieka a 6cl bieleho rumu vlejte do shakera. V prípade, že robíte originálnu Piña coladu, ovocie pomixujte a potom vlejte do shakera.</li>
+      <li><strong>2. krok:</strong> Pridajte ešte pár kociek ľadu a poriadne premiešajte.</li>
+      <li><strong>3. krok:</strong> Premiešaný drink nalejte do pohárov a v prípade že máte k dispozícii čerstvý ananás, môžete pohár ozdobiť 1 plátkom.</li>
+      </ul>
+    <button onclick="hidePopup('popup-pina')">Zatvoriť</button>
+  </div>
+</div>
+
+<div id="popup-sour" class="popup">
+  <div class="popup-content">
+    <h2 id="popup-title"></h2>
+    <h3>Ingrediencie:</h3>
+               <ul>
+      <li>4,5cl (45ml) whiskey </li>
+      <li>3cl (30ml) citrónovej šťavy</li>
+      <li>1,5cl (15ml) cukrového sirupu</li>
+      <li>Trocha vaječného bielku</li>
+      <li>Ľad</li>
+      </ul>
+    <h3>Postup prípravy:</h3>
+                  <ul>
+      <li><strong>1. krok</strong>: Všetky ingrediencie vložte do shakera spolu s ľadom.</li>
+      <li><strong>2. krok</strong>: Poriadne premiešajte, ak ste pridali aj vaječný bielok, miešajte čo najsilnejšie aby bol koktail pekne spenený.</li>
+      <li><strong>3. krok</strong>: Cez sitko prelejte do pohára.</li>
+      <li><strong>4. krok</strong>: Výsledok ozdobte plátkom citróna alebo maraschino čerešňou.</li>
+      </ul>
+    <button onclick="hidePopup('popup-sour')">Zatvoriť</button>
+  </div>
+</div>
+
+<div id="popup-new" class="popup">
+  <div class="popup-content">
+    <h2 id="popup-title"></h2>
+    <h3>Ingrediencie:</h3>
+                     <ul>
+        <li>6cl (60ml) whiskey</li>
+        <li>3cl (30ml) vermouthu</li>
+        <li>pár kvapiek Angostura bitteru</li>
+        <li>Maraschino čerešňa</li>
+        <li>ľad</li>
+        </ul>
+              <h3>Postup prípravy:</h3>
+                           <ul>
+          <li><strong>1. krok</strong>: Do pohára na miešanie vložte ľad a prilejte whisky, vermouth a bitter.</li>
+          <li><strong>2. krok</strong>: Chvíľu miešajte, aby sa drink vychladil.</li>
+          <li><strong>3. krok</strong>: Cez sitko nalejte do pohára.</li>
+          <li><strong>4. krok</strong>: Ozdobte maraschino čerešňou.</li>
+          </ul>
+    <button onclick="hidePopup('popup-new')">Zatvoriť</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="uvodny_script_age.js"></script>
+
+</body>
+
+</html>
